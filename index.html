@@ -3,158 +3,219 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Manuel Sosa">
-        <meta name="description" content="Esta pagina web personal, donde muestra quien soy yo, información de contacto,
-        proyectos que he realizado, mis intereses / hobbies / habilidades y mi formación academica y expereincia.">
-        <title>Mi página personal</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <link href="./main.css" rel="stylesheet">
+        <meta name="author" content="Manuel Ricardo Sosa Montañez">
+        <meta name="description" content="This personal web page, where it shows who I am, contact information,
+        projects I have done, my interests / hobbies / skills and my academic background and experience.">
+        <title>My personal page</title>
     </head>
     <body>
-        <header>
-            <h1>Manuel Ricardo Sosa Montañez</h1>
-            <img alt="Foto de Manuel Sosa" title="Foto de Manuel Sosa" src="./data/manuelsosa.jpg" width="250px">
-        </header>
-        <nav>
-            <h2>Barra de Navegación:</h2>
-            <ul>
-                <li><a href="#datos-biograficos">Datos biográficos</a></li>
-                <li><a href="#datos-academicos">Datos acedémicos</a></li>
-                <li><a href="#formulario-contacto">Formulario de contacto</a></li>
-                <li><a href="#datos-contacto">Datos de contacto</a></li>
-                
-            </ul>
-        </nav>
+        
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark d-none d-md-block">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class="nav-item" >
+                    <a class="nav-link" href="#biographical-data">Biographical data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#academic-data">Academic data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-form">Contact Form</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-information">Contact information</a>
+                </li> 
+              </ul>
+            </div>
+          </nav>  
         <main>
-            <section id="datos-biograficos">
-                <h2>Datos biográficos:</h2>
-                <table border="1">
-                    <caption><small>Datos biográficos</small> </caption>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h3>Sexo:</h3>
-                            </td>
-                            <td>
-                                Masculino
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Edad:</h3>
-                            </td>
-                            <td>
-                                21 años
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Fecha de nacimiento:</h3>
-                            </td>
-                            <td>
-                                <time datetime="2000-10-05"> 5 de Octubre de 2000</time>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Lugar de nacimiento:</h3>
-                            </td>
-                            <td>
-                                Duitama, Boyacá
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Lugar de residencia:</h3>
-                            </td>
-                            <td>
-                                Bogotá D.C.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Nacionalidad:</h3>
-                            </td>
-                            <td>
-                                Colombiano
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div id="fondo" class="container-fluid p-5 text-white text-center">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-fluid img-thumbnail" alt="Photo by Manuel Sosa" title="Photo by Manuel Sosa" src="./data/manuelsosa.jpg" width="250px">
+                    </div>
+                    <hr class="d-sm-none">
+                    <div class="col">
+                        <h1>My personal Page</h1>
+                        <p>Hi, i'm Manuel Ricardo Sosa  Montañez</p> 
+                        <img class="img-fluid " alt="AI image" title="AI image" src="./data/inteligencia-artificial (1).png" width="250px">
+                    </div>
+                </div>
+            </div>
+            <section id="biographical-data" class="container-fluid p-0">
+                <div class="row  d-flex justify-content-around flex-wrap " id="row">
+                    <div class="col-6 p-4 justify-content-center bio-container" id="biographical-data-bg">
+                        <div class="bio-container">
+                            <h2>Biographical data:</h2>
+                            <ul>
+                                <li>
+                                    <h4>Gender:</h4> Male
+                                </li>
+                                <li>
+                                    <h4>Age:</h4> 21 years
+                                </li>
+                                <li>                                    
+                                    <h4>Date of birth:</h4> <time datetime="2000-10-05"> October 5th, 2000</time>
+                                </li>
+                                <li>                                    
+                                    <h4>Place of birth:</h4>Duitama, Boyacá
+                                </li>
+                                <li>                                    
+                                    <h4>Place of residence:</h4> Bogotá D.C.
+                                </li>
+                                <li>                                    
+                                    <h4>Nationality:</h4> Colombian
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="d-sm-none">
+                    <div class="col-6 p-5 d-flex justify-content-center">
+                        <img class="img-fluid" id="bio-img" alt="Photo by Manuel Sosa" title="Photo by Manuel Sosa" src="./data/yo-pequeño2.jpeg" >
+                    </div>
+                </div>                
             </section>
-            <section id="datos-academicos">
-                <h2>Datos académicos:</h2>
-                <ul>
-                    <li>
-                        <h4>Escuela secundaria:</h4> Colegio Seminario Diocesano de Duitama <strong>(prom 2017)</strong>
-                    </li>
-                    <li>
-                        <h4>Universidad:</h4> Universidad de los Andes <strong>(Ing. sistemas y Computación)</strong>
-                    </li>
-                </ul>
+            <section id="academic-data ac-bio" class="container-fluid p-0">
+                <div class="row  d-flex justify-content-around flex-wrap" id="row">
+                    <div class="col-6 p-5 d-flex justify-content-between">
+                        <img class="img-fluid" id="ac-img" alt="Photo by Manuel Sosa" title="Photo by Manuel Sosa" src="./data/academic.jpg" >
+                    </div>
+                    <hr class="d-sm-none">
+                    <div class="col-6 p-4 ac-container" id="academical-data-bg">
+                        <div class="ac-container">
+                            <h2>Academic data:</h2>
+                            <ul>
+                                <li>
+                                    <h4>High school:</h4> Colegio Seminario Diocesano de Duitama <strong>(prom 2017)</strong>
+                                </li>
+                                <li>
+                                    <h4>University:</h4> Universidad de los Andes <strong>(Ing. sistemas y Computación)</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>                    
+                </div> 
+                
             </section>
-            <section id="intereses">
-                <h2>Intereses:</h2>
-                <table border="1">
-                    <caption><small>Intereses</small> </caption>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <h3>Teatro</h3>
-                            </td>
-                            <td>
+            <section id="interests">
+                <div class="container-fluid p-5 text-center text-white" id="tittle-interests">
+                    <h2>Some of my interests are:</h2>
+                </div>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div id="container-video" class="carousel-item active">
+                            <iframe id="responsive-iframe" class="d-block" src="https://www.youtube.com/embed/QtNso43hjmw?start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Theater</h3>
+                                <p>Since I was little I have acted in different theater groups and I have a lot of fun with each presentation.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./data/dashboard.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Business intelligence</h3>
+                                <p>Effective BI helps businesses and organizations ask and answer questions about data.</p>
+                            </div>
+                        </div>
+                        <div id="container-video" class="carousel-item">
+                            <iframe id="responsive-iframe" class="d-block" src="https://www.youtube.com/embed/30dM-Mgm_74?start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="carousel-caption d-none d-md-block">
                                 <h3>Piano</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <iframe width="460" height="265" src="https://www.youtube.com/embed/QtNso43hjmw?start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </td>
-                            <td>
-                                <iframe width="460" height="265" src="https://www.youtube.com/embed/30dM-Mgm_74?start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3>Programación web</h3>
-                            </td>
-                            <td>
-                                <h3>Inteligencia de negocios</h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="./data/programacion.jfif" alt="programacion web" width="460">
-                            </td>
-                            <td>
-                                <img src="./data/dashboard.jpg" alt="dashboard" width="460">
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <p>Greater control over the body is acquired, playing the piano strengthens coordination and fine motor skills. The management of relaxation is acquired, especially of "relaxation in action".</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./data/programming.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Web programming</h3>
+                                <p>Effective BI helps businesses and organizations ask and answer questions about data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </section>
-            <section id="formulario-contacto">
-                <h2>Formulario de contacto:</h2>
-                <form action="">
-                    <p>Nombre: <input type="text" name="nombre" required></p>
-                    <p>Fecha de nacimiento: <input type="date" name="nacido" min="1900" required></p>
-                    <p>Sexo:
-                        <input type="radio" name="hm" value="h" required> Hombre
-                        <input type="radio" name="hm" value="m" required> Mujer
-                        <input type="radio" name="hm" value="o" required> Otro
-                    </p>
-                    <p>Email: <input type="email" name="email" required></p>
-                    <p>Número de delular: <input type="number" name="numero" required></p>
-                    <p>Contraseña: <input type="password" name="contrasena" required></p>
-                    <p>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Borrar">
-                    </p>
-                </form>
-            </section>
+
+
+            <div id="fondo" class="d-flex justify-content-end">
+                <section class="container p-5 my-5 d-flex justify-content-center" id="contact-form">
+                    <div class="col-6">
+                        <div class="card ">
+                            <div class="card-header"><h2>Contact Form:</h2></div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="mb-3 mt-3">
+                                        <label for="name" class="form-label">Name:</label>
+                                        <input class="form-control" type="text" name="name" required>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="date" class="form-label">Date of birth:</label>
+                                        <input class="form-control" type="date" name="birth" min="1900" required>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="date" class="form-label">Gender:</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="M" type="radio" name="Male" value="M" checked required> Male
+                                            <label class="form-check-label" for="M"></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="F" type="radio" name="Female" value="F" required> Female
+                                            <label class="form-check-label" for="F"></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" id="O" type="radio" name="Other" value="O" required> Other
+                                            <label class="form-check-label" for="O"></label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="email" class="form-label">Email:</label>
+                                        <input class="form-control" type="email" name="email" required>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="number" class="form-label">Cell phone:</label>
+                                        <input class="form-control" type="number" name="cellphone" required>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <label for="password" class="form-label">Password:</label>
+                                        <input class="form-control" type="password" name="password" required>
+                                    </div>
+                                    <div class="d-flex justify-content-around mb-3 mt-3">
+                                        <input type="submit" class="btn btn-outline-success" value="Enviar">
+                                        <input type="reset" class="btn btn-outline-warning" value="Borrar">
+                                    </div>
+                                </form>
+                            </div>
+                          </div>                        
+                    </div>
+                    
+                </section>  
+            </div>
         </main>
-        <footer>
-            <section id="datos-contacto">
-                <h2>Datos de contacto: </h2>
-                <p>Sígueme en <a href="https://www.facebook.com/Manuel.Sosa.1005"><img src="./data/facebook.png" alt="Facebook" width="20px"></a>  
+        <footer class=" p-4 bg-dark text-white text-center">
+            <section id="contact-information">
+                <h2>Contact information: </h2>
+                <p>Follow me in <a href="https://www.facebook.com/Manuel.Sosa.1005"><img src="./data/facebook.png" alt="Facebook" width="20px"></a>  
                               <a href="https://www.instagram.com/manuel_sosam/"><img src="./data/instagram.png" alt="Instagram" width="20px"></a>
                               <a href="https://api.whatsapp.com/send/?phone=573208702125&text=Hola%21"><img src="./data/whatsapp.png" alt="WhatsApp" width="20px"></a></p>
                 <p>Copyright 2022</p>
