@@ -9,12 +9,12 @@
     align-items: center;
 }
 
-#biographical-data-bg{
+#biographical-data-bg{  
     background-color: #e0e0e0;
 }
 
 #bio-img{
-    width: 15rem;
+    width: 20rem;
 }
 
 .ac-container{
@@ -57,6 +57,11 @@
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
+#botones-container{
+    display: flex;
+    justify-content: space-around;
+}
+
 .body {
     font-family: 'Lato', sans-serif !important;
 }
@@ -64,4 +69,4 @@
 a:hover {
     background-color: rgba(255, 217, 0, 0.747);
     border-radius: 15px;
-  }
+}
